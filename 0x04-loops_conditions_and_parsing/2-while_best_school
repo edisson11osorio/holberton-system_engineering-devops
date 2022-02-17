@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Creating a script that uses a while
 while $n 
 do
   echo -e "$n Best School \n" "Best School \n" "Best School \n" "Best School \n"  "Best School \n" "Best School \n" "Best School \n" "Best School \n" "Best School \n" "Best School"
