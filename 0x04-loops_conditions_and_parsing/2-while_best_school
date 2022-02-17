@@ -4,4 +4,5 @@ q=1
 while [ $q -le 10 ]
 do
 	echo "Best School"
+    ((q++))
 done
