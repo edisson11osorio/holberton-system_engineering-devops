@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 while $n 
 do
   echo -e "$n Best School \n" "Best School \n" "Best School \n" "Best School \n"  "Best School \n" "Best School \n" "Best School \n" "Best School \n" "Best School \n" "Best School"
