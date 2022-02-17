@@ -1,0 +1,6 @@
+#!/bin/bash
+while $n 
+do
+  echo -e "$n Best School \n" "Best School \n" "Best School \n" "Best School \n"  "Best School \n" "Best School \n" "Best School \n" "Best School \n" "Best School \n" "Best School"
+  break
+done
