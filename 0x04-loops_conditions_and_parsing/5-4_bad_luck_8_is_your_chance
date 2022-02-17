@@ -11,7 +11,7 @@ do
         then
             echo "bad luck"
         else
-            
+            continue
         fi
         ((a++))
 done
