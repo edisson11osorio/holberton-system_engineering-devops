@@ -3,7 +3,6 @@
 a=1
 while [ $a -le 10 ]
 do
-        echo "Best School"
         if [ $a -eq 4 ]
         then
             echo "bad luck"
@@ -11,8 +10,8 @@ do
         elif [ $a -eq 8 ]
         then
             echo "bad luck"
-        else
-            echo "Best School"
+         else
+             echo "Best School"
         fi
         ((a++))
 done
