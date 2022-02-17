@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#FizzBuzz
+a="1"
+while [ $a -le 100 ]
+do
+	if [ $((a % 15 )) -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $((a % 3)) -eq 0 ]
+	then	
+		echo "Fizz"
+	elif [ $((a % 5)) -eq 0 ]
+	then
+		echo "Buzz"
+	else
+		echo $a
+	fi
+	i=$((a + 1))
+	done
