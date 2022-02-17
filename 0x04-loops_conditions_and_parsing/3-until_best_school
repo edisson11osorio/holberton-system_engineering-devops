@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Creating a script that uses a until
 n=0
 until [ $n -gt 10 ]
 do
