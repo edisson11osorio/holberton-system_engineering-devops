@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#create a script with if elif and else
+#create a script with if
 n=1
 while [ $n -le 10 ]
 do
