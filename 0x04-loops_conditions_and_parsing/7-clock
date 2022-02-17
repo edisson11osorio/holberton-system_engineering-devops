@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #creating nests in bash
-time=0
-while [ $time - le 12 ]
+hour=0
+while [ $hour -le 12 ]
 do
-    echo "Hour: $time"
+    echo "Hour: $hour"
     minutes=1
     while [ $minutes -lt 60 ]
      do
             echo "$minutes"
             ((minutes++))
     done
-    ((time++))
+    ((hour++))
 done
