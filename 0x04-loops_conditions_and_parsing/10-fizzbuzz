@@ -15,5 +15,5 @@ do
 	else
 		echo $a
 	fi
-	i=$((a + 1))
+	a=$((a + 1))
 	done
