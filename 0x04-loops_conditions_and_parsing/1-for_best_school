@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in "Best School"  "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School"
+do
+  echo "$i"
+done 
