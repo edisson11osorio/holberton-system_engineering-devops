@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Creating a script that uses a for loop
+#Creating a script that uses a for
 for i in "Best School"  "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School"
 do
   echo "$i"
