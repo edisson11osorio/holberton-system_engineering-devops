@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#creating nests in bash
 time=0
 while [ $time - le 12 ]
 do
