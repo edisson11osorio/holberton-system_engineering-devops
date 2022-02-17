@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Creating a script ls
+for a in *
+do
+	echo "$a" | cut -f 2- -d '-'
+done
