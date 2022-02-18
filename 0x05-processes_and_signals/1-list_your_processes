@@ -1,4 +1,3 @@
 #!/usr/in/env bash
 # script that displays a list of current processes
-
 ps -auxf 
