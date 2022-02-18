@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script that displays a list of current process
+ps aux --forest | grep bash
