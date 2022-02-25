@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A bash script 
+sudo netstat -pl
