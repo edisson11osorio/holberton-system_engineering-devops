@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Install HAproxy and config load balancer
+add-apt-repository -y ppa:vbernat/haproxy-1.7
+apt-get -y update
+apt-get -y install haproxy
+FIRST_PATH="errorfile 504"
+FIRST_PATH_TWO="frontend http_front\n\tbind *:80\n\tstats uri /haproxy?stats\n\tdefault_backend http_back\nbackend http_back\n\tbalance roundrobin\n\tserver web-01 34.138.255.36:80 check\n\tserver web-02 54.167.70.23:80 check"
+SECOND_PATH="/etc/haproxy/haproxy.cfg"
+sed -i "/$FIRST_PATH/a$FIRST_PATH_TWO" $SECOND_PATH
+service haproxy restart
