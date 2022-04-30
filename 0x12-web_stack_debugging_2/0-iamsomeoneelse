@@ -1,0 +1,4 @@
+
+#!/usr/bin/env bash
+# Script that reconize an users
+sudo -u "$1" whoami
