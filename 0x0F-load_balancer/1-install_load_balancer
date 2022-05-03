@@ -1,17 +1,22 @@
 #!/usr/bin/env bash
-# Install and configure HAproxy on your lb-01 server
-HACONFIG="
-frontend http_front
-   bind *:80
-   stats uri /haproxy?stats
-   default_backend http_back
-backend http_back
-   balance roundrobin
-   server web-01 34.74.11.87:80 check
-   server web-02 54.211.225.96:80 check
-   "
-add-apt-repository -y ppa:vbernat/haproxy-1.7
-apt -y update
-apt install -y haproxy
-echo "$HACONFIG" >> /etc/haproxy/haproxy.cfg
-service haproxy restart
+# Ubuntu 20.04
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install haproxy
+
+sudo chown -R ubuntu /etc/haproxy
+
+configuration="\
+frontend http
+	bind *:80
+	mode http
+	default_backend web-server
+backend web-server
+	balance roundrobin
+	server 3774-web-01 34.75.79.52:80 check
+	server 3774-web-02 54.85.108.121:80 check
+"
+
+sudo echo "$configuration" >> /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
