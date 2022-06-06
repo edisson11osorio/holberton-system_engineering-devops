@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#redirect_me is redirecting to another page
+apt-get update -y
+apt-get -y install nginx
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+service nginx restart
