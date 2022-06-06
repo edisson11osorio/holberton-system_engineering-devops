@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Get information of each server
+
+function out_put() {
+    dig "$2.$1" | awk '/ANSWER SECTION:/{getline; printf("The subdomain %s is a %s record and points to %s\n", subDomain, $4, $5)}' subDomain="$SUBDOMAIN"
+}
+
+if [ -z "$2" ]; then
+    for SUBDOMAIN in "www" "lb-01" "web-01" "web-02"; do
+        out_put "$1" "$SUBDOMAIN"
+    done
+else
+    for SUBDOMAIN in $2; do
+        out_put "$1" "$SUBDOMAIN"
+    done
+fi
